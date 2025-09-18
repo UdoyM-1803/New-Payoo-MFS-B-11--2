@@ -67,12 +67,12 @@
             <!-- Add Money Form Section -->
             <Section id="add-money-section" class="my-2">
                 <h1 class="text-xl font-bold ml-5">Add Money</h1>
-                <div class="">
+                <div>
                     <div class="hero-content flex-col lg:flex-row-reverse">
                         <div class="card w-full max-w-sm shrink-0 shadow-2xl">
                             <form class="card-body">
                                 <legend class="text-base font-medium ">Select Bank</legend>
-                                <select class="select rounded-full w-full border-none">
+                                <select id="selected-bank" class="select rounded-full w-full border-none">
                                     <option disabled selected>Select Bank</option>
                                     <option value="Bkash">Bkash</option>
                                     <option value="Nagad">Nagad</option>
@@ -105,29 +105,38 @@
             <!-- Cash Out Form Section -->
             <section id="cash-out-section" class="my-2">
                 <h1 class="text-xl font-bold ml-5">Cash Out</h1>
-                <div class="">
+                <div>
                     <div class="hero-content flex-col lg:flex-row-reverse">
                         <div class="card w-full max-w-sm shrink-0 shadow-2xl">
                             <form class="card-body">
                                 <fieldset class="fieldset">
                                     <label class="label text-base font-medium text-black">Bank Account Number</label>
                                     <input id="account-number" type="number" value="01301301302"
-                                    class="input rounded-full w-full border-none"
-                                    placeholder="Enter 11 digit account number"/>
+                                        class="input rounded-full w-full border-none"
+                                        placeholder="Enter 11 digit account number" />
 
                                     <label class="label text-base font-medium text-black">Amount</label>
                                     <input id="cash-out-amount" type="text"
-                                    class="input rounded-full w-full border-none" placeholder="Enter the Amount" />
+                                        class="input rounded-full w-full border-none" placeholder="Enter the Amount" />
 
                                     <label class="label text-base font-medium text-black">Pin Number</label>
                                     <input id="cash-out-pin" type="text" class="input rounded-full w-full border-none"
-                                    placeholder="Enter 4 digit pin" />
+                                        placeholder="Enter 4 digit pin" />
 
-                                    <button id="cash-out-btn" class="btn btn-primary mt-4 rounded-full">Withdraw Money</button>
+                                    <button id="cash-out-btn" class="btn btn-primary mt-4 rounded-full">Withdraw
+                                        Money</button>
                                 </fieldset>
                             </form>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- Transaction History Section -->
+            <section id="transaction-section" class="my-2">
+                <h1 class="text-xl font-bold ml-5">Transaction History</h1>
+                <div id="transaction-container" class="w-96 mx-auto flex flex-col gap-2 mt-3">
+
                 </div>
             </section>
         </header>
@@ -136,6 +145,7 @@
     <script src="utilities/utilities.js"></script>
     <script src="JS/addmoney.js"></script>
     <script src="JS/cashout.js"></script>
+    <script src="JS/transactionhistory.js"></script>
 </body>
 
 </html>
