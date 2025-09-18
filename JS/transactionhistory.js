@@ -4,4 +4,5 @@ document.getElementById('transaction-box')
         handleToggle("cash-out-section", "none")
         handleToggle("transaction-section", "block");
         handleToggle("transfer-money-section", "none");
+        handleToggle("bonus-coupon-section", "none");
 })

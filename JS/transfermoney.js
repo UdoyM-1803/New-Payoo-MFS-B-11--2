@@ -47,7 +47,7 @@ document.getElementById('transfer-money-btn')
                         <div class="card bg-base-100 card-sm">
                             <div class="card-body">
                                 <h2 class="card-title">Money Transfer</h2>
-                                <p>${amount}$ Transferred from your A/C ${accountNumber} to A/C ${recipientAccountNumber}.
+                                <p class="text-sm">${amount}$ Transferred from your A/C ${accountNumber} to A/C ${recipientAccountNumber}.
                                 </p>
                             </div>
                         </div>

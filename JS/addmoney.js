@@ -45,7 +45,7 @@ document.getElementById('add-money-btn')
                     <div class="card bg-base-100 card-sm">
                         <div class="card-body">
                             <h2 class="card-title">Bank Deposit</h2>
-                            <p>${amount}$ credited to your A/C ${accountNumber} through ${selectedBank}.
+                            <p class="text-sm">${amount}$ credited to your A/C ${accountNumber} through ${selectedBank}.
                             </p>
                         </div>
                     </div>

@@ -43,7 +43,7 @@ document.getElementById('cash-out-btn')
                         <div class="card bg-base-100 card-sm">
                             <div class="card-body">
                                 <h2 class="card-title">Withdraw Money</h2>
-                                <p>${amount}$ withdrew from your A/C ${accountNumber}.
+                                <p class="text-sm">${amount}$ withdrew from your A/C ${accountNumber}.
                                 </p>
                             </div>
                         </div>
