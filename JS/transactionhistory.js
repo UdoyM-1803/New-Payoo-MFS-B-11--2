@@ -5,4 +5,5 @@ document.getElementById('transaction-box')
         handleToggle("transaction-section", "block");
         handleToggle("transfer-money-section", "none");
         handleToggle("bonus-coupon-section", "none");
+        handleToggle("pay-bill-section", "none");
 })

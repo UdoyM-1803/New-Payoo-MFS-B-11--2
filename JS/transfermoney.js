@@ -30,6 +30,7 @@ document.getElementById('transfer-money-btn')
         }
         // 00000000000000000000000000000000000000000000000
 
+
         if (accountNumber.length === 11) {
             if (pin === 1234) {
                 if (amount > mainBalance) {
@@ -56,5 +57,11 @@ document.getElementById('transfer-money-btn')
                     // 000000000000000000000000000000000000
                 }
             }
+            else {
+                alert("Wrong Validation...!!!");
+            }
+        }
+        else {
+            alert("Unable to Perform..!!!");
         }
 })

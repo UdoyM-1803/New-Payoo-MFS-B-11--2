@@ -194,6 +194,45 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Pay Bill Section -->
+            <Section id="pay-bill-section" class="my-2">
+                <h1 class="text-xl font-bold ml-5">Pay Bill</h1>
+                <div>
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                                <legend class="text-base font-medium ">Select to Pay</legend>
+                                <select id="selected-biller" class="select rounded-full w-full border-none">
+                                    <option disabled selected>Select Back</option>
+                                    <option value="Electricity Bill">Electricity Bill</option>
+                                    <option value="Water Bill">Water Bill</option>
+                                    <option value="Gas Bill">Gas Bill</option>
+                                    <option value="Internet Bill">Internet Bill</option>
+                                    <option value="Wi-Fi Bill">Admission Pay</option>
+                                    <option value="Donation">Donation</option>
+                                </select>
+                                <fieldset class="fieldset">
+                                    <label class="label text-base font-medium text-black">Biller Account Number</label>
+                                    <input id="biller-account-number" type="number" value="12345678901"
+                                        class="input rounded-full w-full border-none"
+                                        placeholder="Enter 11 digit account number" />
+
+                                    <label class="label text-base font-medium text-black">Amount to Pay</label>
+                                    <input id="pay-bill-amount" type="text"
+                                        class="input rounded-full w-full border-none" placeholder="Add Amount to Pay" />
+
+                                    <label class="label text-base font-medium text-black">Pin Number</label>
+                                    <input id="pay-bill-pin" type="text" class="input rounded-full w-full border-none"
+                                        placeholder="Enter 4 digit pin" />
+
+                                    <button id="pay-bill-btn" class="btn btn-primary mt-4 rounded-full">Pay Now</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </Section>
         </header>
     </section>
     <script src="utilities/toggle.js"></script>
@@ -203,6 +242,7 @@
     <script src="JS/transactionhistory.js"></script>
     <script src="JS/transfermoney.js"></script>
     <script src="JS/bonuscoupon.js"></script>
+    <script src="JS/paybill.js"></script>
 </body>
 
 </html>

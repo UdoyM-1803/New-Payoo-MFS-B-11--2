@@ -12,7 +12,6 @@ document.getElementById('add-money-btn')
 
         // Get the Account Number ------------------------
         const accountNumber = document.getElementById('add-money-account-number').value;
-        console.log(typeof accountNumber);
         // 00000000000000000000000000000000000000000000000
 
 
@@ -62,6 +61,3 @@ document.getElementById('add-money-btn')
         }
 
 })
-// <!-- <section class="w-5/6 mx-auto flex flex-col gap-2">
-                
-//             </section> -->
