@@ -81,7 +81,7 @@
                                 </select>
                                 <fieldset class="fieldset">
                                     <label class="label text-base font-medium text-black">Bank Account Number</label>
-                                    <input id="account-number" type="number" value="01301301302"
+                                    <input id="add-money-account-number" type="number" value="01301301302"
                                         class="input rounded-full w-full border-none"
                                         placeholder="Enter 11 digit account number" />
 
@@ -111,7 +111,7 @@
                             <form class="card-body">
                                 <fieldset class="fieldset">
                                     <label class="label text-base font-medium text-black">Bank Account Number</label>
-                                    <input id="account-number" type="number" value="01301301302"
+                                    <input id="cash-out-account-number" type="number" value="01301301302"
                                         class="input rounded-full w-full border-none"
                                         placeholder="Enter 11 digit account number" />
 
@@ -139,6 +139,40 @@
 
                 </div>
             </section>
+
+            <!-- Transfer Money Section -->
+            <section id="transfer-money-section" class="my-2">
+                <h1 class="text-xl font-bold ml-5">Transfer Money</h1>
+                <div>
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                                <fieldset class="fieldset">
+                                    <label class="label text-base font-medium text-black">User Account Number</label>
+                                    <input id="transfer-money-account-number" type="number" value="01301301302"
+                                        class="input rounded-full w-full border-none"
+                                        placeholder="Enter 11 digit account number" />
+
+                                    <label class="label text-base font-medium text-black">Recipient's Account Number</label>
+                                    <input id="transfer-money-recipient-account-number" type="number" value="16161616163"
+                                        class="input rounded-full w-full border-none"
+                                        placeholder="Enter 11 digit account number" />
+
+                                    <label class="label text-base font-medium text-black">Amount</label>
+                                    <input id="transfer-money-amount" type="text"
+                                        class="input rounded-full w-full border-none" placeholder="Enter the Amount" />
+
+                                    <label class="label text-base font-medium text-black">Pin Number</label>
+                                    <input id="transfer-money-pin" type="text" class="input rounded-full w-full border-none"
+                                        placeholder="Enter 4 digit pin" />
+
+                                    <button id="transfer-money-btn" class="btn btn-primary mt-4 rounded-full">Send Now</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </header>
     </section>
     <script src="utilities/toggle.js"></script>
@@ -146,6 +180,7 @@
     <script src="JS/addmoney.js"></script>
     <script src="JS/cashout.js"></script>
     <script src="JS/transactionhistory.js"></script>
+    <script src="JS/transfermoney.js"></script>
 </body>
 
 </html>

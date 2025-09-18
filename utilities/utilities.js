@@ -6,7 +6,7 @@ function getInputValueByID(id) {
 
 function getInnerTextValueByID(id) {
     const textValue = document.getElementById(id).innerText;
-    const  numTextValue = parseFloat(textValue);
+    const numTextValue = parseFloat(textValue);
     return numTextValue;
 }
 

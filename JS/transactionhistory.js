@@ -3,4 +3,5 @@ document.getElementById('transaction-box')
         handleToggle("add-money-section", "none")
         handleToggle("cash-out-section", "none")
         handleToggle("transaction-section", "block");
+        handleToggle("transfer-money-section", "none");
 })

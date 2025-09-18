@@ -11,7 +11,8 @@ document.getElementById('add-money-btn')
 
 
         // Get the Account Number ------------------------
-        const accountNumber = document.getElementById('account-number').value;
+        const accountNumber = document.getElementById('add-money-account-number').value;
+        console.log(typeof accountNumber);
         // 00000000000000000000000000000000000000000000000
 
 
@@ -24,8 +25,8 @@ document.getElementById('add-money-btn')
         // 00000000000000000000000000000000000000000000000
 
 
-        // Check the Account number, Amount and Pin whether it is number or not ---------------------
-        if (isNaN(amount) || isNaN(pin) || isNaN(accountNumber)) {
+        // Check the Amount and Pin whether it is number or not ---------------------
+        if (isNaN(amount) || isNaN(pin)) {
             alert("Please, Input valid number...!!!");
             return;
         }

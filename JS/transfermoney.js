@@ -1,19 +1,24 @@
-document.getElementById('cash-out-btn')
+document.getElementById('transfer-money-btn')
     .addEventListener('click', function(event) {
         event.preventDefault();
 
-        // Get the Amount and Pin using function ---------
-        const amount = getInputValueByID('cash-out-amount');
-        const pin = getInputValueByID('cash-out-pin');
+        // Get the Amount and Pin using function --------
+        const amount = getInputValueByID('transfer-money-amount');
+        const pin = getInputValueByID('transfer-money-pin');
+        // 0000000000000000000000000000000000000000000000
+
+
+        // Get the Account Number -----------------------
+        const accountNumber = document.getElementById('transfer-money-account-number').value;
+        // 0000000000000000000000000000000000000000000000
+
+
+        // Get the Recipients Account Number -------------
+        const recipientAccountNumber = document.getElementById('transfer-money-recipient-account-number').value;
         // 00000000000000000000000000000000000000000000000
 
 
-        // Get the Account Number ------------------------
-        const accountNumber = document.getElementById('cash-out-account-number').value;
-        // 00000000000000000000000000000000000000000000000
-
-
-        // Get the Available Balance using function -------
+        // Get the Main Balance using function ------------
         const mainBalance = getInnerTextValueByID('main-balance');
         // 00000000000000000000000000000000000000000000000
 
@@ -24,7 +29,6 @@ document.getElementById('cash-out-btn')
             return;
         }
         // 00000000000000000000000000000000000000000000000
-        
 
         if (accountNumber.length === 11) {
             if (pin === 1234) {
@@ -42,21 +46,15 @@ document.getElementById('cash-out-btn')
                     div.innerHTML = `
                         <div class="card bg-base-100 card-sm">
                             <div class="card-body">
-                                <h2 class="card-title">Withdraw Money</h2>
-                                <p>${amount}$ withdrew from your A/C ${accountNumber}.
+                                <h2 class="card-title">Money Transfer</h2>
+                                <p>${amount}$ Transferred from your A/C ${accountNumber} to A/C ${recipientAccountNumber}.
                                 </p>
                             </div>
                         </div>
                     `
                     container.appendChild(div);
-                    // 000000000000000000000000000000000000000
+                    // 000000000000000000000000000000000000
                 }
             }
-            else {
-                alert("Wrong Validation...!!!");
-            }
-        }
-        else {
-            alert("Unable to Perform..!!!");
         }
 })
