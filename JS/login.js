@@ -19,7 +19,7 @@ document.getElementById("login-btn")
             }
         }
         else {
-            alert("Wrong Submission...!!!");
+            alert("Enter Valid Account Number...!!!");
         }
         // 000000000000000000000000000000000000000000000000
 })

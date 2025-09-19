@@ -22,3 +22,13 @@ function setInnerTextByIDandValue(id, value) {
 function handleToggle(id, status) {
     document.getElementById(id).style.display = status;
 }
+
+function addElementOnClickedDiv(id) {
+    const element = document.getElementById(id);
+    element.classList.add("bg-cyan-100", "border-blue-500", "border-2");
+}
+
+function removeHover(id) {
+    const removeElement = document.getElementById(id);
+    removeElement.classList.remove("bg-cyan-100", "border-blue-500", "border-2");
+}

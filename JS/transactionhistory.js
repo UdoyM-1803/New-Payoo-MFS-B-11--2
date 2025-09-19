@@ -6,4 +6,11 @@ document.getElementById('transaction-box')
         handleToggle("transfer-money-section", "none");
         handleToggle("bonus-coupon-section", "none");
         handleToggle("pay-bill-section", "none");
+
+        addElementOnClickedDiv('transaction-box');
+        removeHover("add-money-box");
+        removeHover("pay-bill-box");
+        removeHover("transfer-money-box");
+        removeHover("get-bonus-box");
+        removeHover("cash-out-box");
 })

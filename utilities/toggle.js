@@ -19,6 +19,13 @@ document.getElementById('add-money-box')
         handleToggle("transfer-money-section", "none");
         handleToggle("bonus-coupon-section", "none");
         handleToggle("pay-bill-section", "none");
+
+        addElementOnClickedDiv('add-money-box');
+        removeHover("cash-out-box");
+        removeHover("transaction-box");
+        removeHover("transfer-money-box");
+        removeHover("get-bonus-box");
+        removeHover("pay-bill-box");
 })
 
 
@@ -30,6 +37,13 @@ document.getElementById('cash-out-box')
         handleToggle("transfer-money-section", "none");
         handleToggle("bonus-coupon-section", "none");
         handleToggle("pay-bill-section", "none");
+
+        addElementOnClickedDiv('cash-out-box');
+        removeHover("add-money-box");
+        removeHover("transaction-box");
+        removeHover("transfer-money-box");
+        removeHover("get-bonus-box");
+        removeHover("pay-bill-box");
 })
 
 document.getElementById('transfer-money-box')
@@ -40,6 +54,13 @@ document.getElementById('transfer-money-box')
         handleToggle("transfer-money-section", "block");
         handleToggle("bonus-coupon-section", "none");
         handleToggle("pay-bill-section", "none");
+
+        addElementOnClickedDiv('transfer-money-box');
+        removeHover("cash-out-box");
+        removeHover("transaction-box");
+        removeHover("add-money-box");
+        removeHover("get-bonus-box");
+        removeHover("pay-bill-box");
 })
 
 document.getElementById('get-bonus-box')
@@ -50,6 +71,13 @@ document.getElementById('get-bonus-box')
         handleToggle("transfer-money-section", "none");
         handleToggle("bonus-coupon-section", "block");
         handleToggle("pay-bill-section", "none");
+
+        addElementOnClickedDiv('get-bonus-box');
+        removeHover("cash-out-box");
+        removeHover("transaction-box");
+        removeHover("add-money-box");
+        removeHover("transfer-money-box");
+        removeHover("pay-bill-box");
 })
 
 document.getElementById('pay-bill-box')
@@ -60,4 +88,11 @@ document.getElementById('pay-bill-box')
         handleToggle("transfer-money-section", "none");
         handleToggle("bonus-coupon-section", "none");
         handleToggle("pay-bill-section", "block");
+
+        addElementOnClickedDiv('pay-bill-box');
+        removeHover("add-money-box");
+        removeHover("transaction-box");
+        removeHover("transfer-money-box");
+        removeHover("get-bonus-box");
+        removeHover("cash-out-box");
 })

@@ -31,7 +31,7 @@ document.getElementById('transfer-money-btn')
         // 00000000000000000000000000000000000000000000000
 
 
-        if (accountNumber.length === 11) {
+        if (accountNumber.length === 11 && recipientAccountNumber.length === 11) {
             if (pin === 1234) {
                 if (amount > mainBalance) {
                     alert("Insufficient Balance...!!!");
@@ -62,6 +62,6 @@ document.getElementById('transfer-money-btn')
             }
         }
         else {
-            alert("Unable to Perform..!!!");
+            alert("Please, Enter Valid Account Number...!!!")
         }
 })
